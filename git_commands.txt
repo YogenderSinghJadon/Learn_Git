@@ -1,0 +1,35 @@
+* git config --global user.username "ysj"
+* git config --global user.email "yogendersingh@gmail.com"
+
+
+1. To check if your local repository is connected to any remote repository
+  git remote -v 
+
+
+2. To add remote branch using git remote command syntax 
+  git remote add name https://url.git 
+
+  By convention we call this remote branch as the origin branch or origin in short.
+  therefore - git remote add origin https://url.git
+  
+  * replace the .git url from the github hosted repository url
+
+
+3. To rename or remove remote branch :
+  git remote rename old_name new_name
+  git remote remove name 
+
+
+* Once we've connected to our remote branch on Github, we can push our code to the remote branch 
+
+
+4. We tell git to push to the remote main/master branch called origin with the command:
+  git push -u origin main/master
+
+    * Basically we use -u flag when you want to set origin as the default upstream remote for a branch . 
+      This is needed if you don't want to manually specify the remote every time you use git pull.  
+
+  * Github has officialy changed naming convention of its master branch to main branch.
+  * You'll see this reflected in the instructions that GitHub provides : 
+    git branch -M main  // this is to rename the Master branch to main in git.
+
