@@ -1,0 +1,2 @@
+This is the file created on github directly.
+The purpose of this file is to practice git fetch and git pull . 
